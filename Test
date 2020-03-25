@@ -1,1 +1,28 @@
-print("Hallo")
+from math import *
+
+test_number = -100
+number = 100
+
+print (5+(4*2))
+print (10 % 3)
+
+print(str(number) + " Jahre alt")
+print(abs(test_number))
+print(pow(4,2))
+print(max(7, 6))
+print(min(4, 6))
+print(round(1.6))
+print(floor(1.8))
+print(ceil(3.8))
+print(sqrt(16))
+
+# todo --> give the rest --> 3 can put 3 times in 9 --> the rest is 1                       "(10 % 3"                                      print( 10 % 3)
+# todo --> convert integer into string                                                      "str(number)"                                  print(str(number)
+# todo --> give me the absolute value                                                       "abs(test_number))"                            print(abs(test_number))
+# todo --> calculate to the power of the second number                                      "(pow(4, 2)"                                   print(pow(4,2))
+# todo --> tell us wich number is higher                                                    "(max(4, 6)"                                   print(max(4, 6))
+# todo --> tell us wich number is lower                                                     "(min(4, 6)"                                   print(min(4, 6))
+# todo --> round up >= 0.5 round of <5                                                      "(round(1.6)"                                  print(round(1.6))
+# todo --> round of no matter what                                                          "(floor(3.8)"                                  print(floor(3.8))
+# todo --> round up no matter what                                                          "(ceil(3.8)"                                   print(ceil(3.8))
+# todo --> give us the squareroot of an number                                              "(sqrt(16)"                                    print(sqrt(16))
