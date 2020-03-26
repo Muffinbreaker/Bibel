@@ -25,5 +25,4 @@ else:
 # todo shift + F10                            run code
 # todo alt + 2                                open vcs operations menu
 # todo str + shift + F1                       create GIT repository
-
 # todo F2                                     jump to the next highlighted error
