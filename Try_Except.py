@@ -17,6 +17,15 @@ for i in list:
 
 
 
+try:
+    answer = 10/0
+    number = float((input("Enter a number: ")))
+    print(number)
+except ZeroDivisionError as err:
+    print(err)
+except ValueError:
+    print("invailid input")
+
 
 
 
