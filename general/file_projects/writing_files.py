@@ -6,7 +6,7 @@ r+ = read and write
 """
 
 
-employee_file = open("/home/muffinbreak/PycharmProjects/Bibel/file_projects/employees", "w")
+employee_file = open("/general/file_projects/employees", "w")
 
 
 employee_file.write("\nKelly - Customer Service")
