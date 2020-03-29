@@ -73,6 +73,7 @@ print(shit_3)
 # todo sort the list alphabetically and numerically                                                        "listname.sort()                                    shit_2.sort()
 # todo reverse the choosen list                                                                            "listname.reverse(shit_2)                           shit_2.reverse()
 # todo copy an existing list                                                                               "listname2 = listname(copy())"                      shit_3 = shit_2.copy().
+# todo gives out how many elements are in the list                                                         "len(listname2)"                                    print(len(listname))
 
 
 
