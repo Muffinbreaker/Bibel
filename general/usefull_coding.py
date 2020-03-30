@@ -94,7 +94,7 @@ for name, hero, universe in zip(names_2, names_3, names_4):
 
 
 
-# Unpacking
+# Unpacking Tuples
 
 a, b, *_, d = (1, 2, 3, 4, 5)
 

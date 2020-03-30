@@ -194,7 +194,29 @@ Schließlich gibst du die vollständige Liste order aus, in der nur noch neue Pr
 
 
 """
+'''
+chaos =["old price: 40", "new price: 21", "old price: 29", "old price: 50", "new price: 101"]
+order = []
 
+for i in chaos:
+    
+    price = int((i.split(": ")[1]))
+    
+    if "old" in i:
+        if price <= 20:
+            price *= 0.8
+        elif price <=50:
+            price *= 0.6
+        else:
+            price *= 0.4
+
+    order.append(price)
+        
+print(order)
+
+
+------------------------------------------> Musterlösung von Aufgabe c)!
+'''
 
 chaos =["old price: 40", "new price: 21", "old price: 29", "old price: 50", "new price: 101"]
 old =[]
@@ -208,7 +230,7 @@ for i in chaos:
     if test[0] == "old ":
         old.append(test[1])
     elif test[0] == "new ":
-        new.append(test[1])
+        order.append(test[1])
 
 for price in old:
     if int(price) <= 20:
@@ -224,3 +246,84 @@ for price in new:
     order.append(price)
 
 print(order)
+
+# ------------------------------------------> eigene Lösung von Aufgabe c)!
+
+"""
+Ein funktionaler Online-Shop
+
+Die Mathemagierin will ihren Online-Shop auf Funktionen umrüsten. Es wartet also wieder einiges an Arbeit auf dich.
+a.) Schreibe eine Funktion, die den Gesamtpreis der Produkte im Warenkorb berechnet!
+
+Vervollständige die Funktion list_sum(), der als Parameter eine Liste mit den Preisen übergeben wird. Die Funktion soll dann die Summe der Zahlen aus der Liste ausgeben.
+
+"""
+
+cart_prices = [20, 3.5, 6.49, 8.99, 9.99, 14.98]
+
+
+def list_sum(l):
+    print(sum(l))
+
+list_sum(cart_prices)
+
+
+"""
+b.) Schreibe eine Funktion, die für einen Artikel eine Preis-Tabelle erstellt!
+
+Nun wünscht sich die Mathmagierin eine Funktion, der sie einen Artikelnamen und den Verkaufspreis übergeben kann. Daraus soll die 
+Funktion eine Liste erstellen, in der die Preise von einem, zwei, drei,... bis zehn Einheiten des Artikels stehen. Genauer soll 
+jedes Element in der Liste so aussehen: "Anzahl x Artikel: Preis".
+
+Du wunderst dich nur kurz über die Ansprüche der Mathemagierin.
+"""
+
+
+
+def prices_list(name, price):
+    x = 0
+    test_list = []
+    while x in range(0, 10):
+        x += 1
+        test_1 = (str((x)) + " x " + name +":" + " " + str(price*x))
+        test_list.append(test_1)
+    print(test_list)
+
+print(prices_list("Kothaufen", 4.12))
+
+
+"""
+c.) Schreibe eine Funktion, die die Listen mit den Artikeln auffüllt!
+
+Von nun an soll auch eine Funktion die Waren in die virtuellen Regale einräumen, d. h. an die erste, noch leere Position in der Liste shelf packen.
+Als Parameter soll der Funktion add_shelf() der einzusortierende Artikel übergeben werden. Die Funktion aktualisiert dann die Liste shelf, und der neue Artikel wurde in das erste leere Regalfach eingeräumt.
+
+"""
+
+shelf = ["Zaubersäge", "leer", "Wunderkekse", "Trickarten", "leer"]
+
+
+
+def add_shelf(article):
+    index = 0
+    for i in shelf:
+        if i == "leer":
+            shelf[index] = article
+            break
+        index += 1
+    print(shelf)
+
+
+add_shelf("Rubik's Cube")
+
+
+
+
+
+
+
+
+
+
+
+
